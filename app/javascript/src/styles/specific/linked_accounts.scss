@@ -1,0 +1,50 @@
+#c-linked-accounts {
+  #a-index {
+    .linked-account {
+      display: flex;
+      max-width: 660px;
+      padding: 1em;
+      background-color: var(--linked-account-background-color);
+      margin-bottom: 1em;
+
+      .linked-account-media img {
+        margin-right: 1em;
+        width: 96px;
+
+        @media (max-width: 660px) {
+          width: 48px;
+        }
+      }
+
+      .linked-account-main {
+        flex-grow: 1;
+
+        .linked-account-header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1em;
+
+          .linked-account-header-left {
+            flex-grow: 1;
+
+            .linked-account-status-icon {
+              color: var(--linked-account-status-icon-color);
+            }
+
+            .linked-account-site {
+              font-weight: bold;
+            }
+          }
+
+          .linked-account-header-right {
+            flex-shrink: 1;
+          }
+        }
+
+        .linked-account-body {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
