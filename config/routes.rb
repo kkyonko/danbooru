@@ -369,6 +369,7 @@ Rails.application.routes.draw do
   get "/static/bookmarklet" => "static#bookmarklet", :as => "bookmarklet"
   get "/static/site_map" => "static#site_map", :as => "site_map"
   get "/static/terms_of_service" => "static#terms_of_service", :as => "terms_of_service"
+  get "/static/privacy_policy" => "static#privacy_policy", :as => "privacy_policy"
   get "/static/contact" => "static#contact", :as => "contact"
   get "/static/dtext_help" => "static#dtext_help", :as => "dtext_help"
 

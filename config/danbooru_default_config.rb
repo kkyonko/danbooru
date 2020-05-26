@@ -30,6 +30,11 @@ module Danbooru
       Socket.gethostname
     end
 
+    # The canonical url for the site (e.g. https://danbooru.donmai.us)
+    def canonical_url
+      "https://#{hostname}"
+    end
+
     # Contact email address of the admin.
     def contact_email
       "webmaster@#{hostname}"
